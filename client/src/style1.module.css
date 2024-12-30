@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda&family=Poppins:wght@300&display=swap');
+
+body {
+    background-color: #f0f0f0; /* Light background for the body */
+}
+
+.container {
+    width: 500px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0px 9px 30px -15px rgb(0 0 0);
+    margin-top: 5%;
+    margin-left: 35%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease; /* Smooth transition when expanding */
+}
+
+/* Grow container height based on content */
+.container:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+h2 {
+    color: #4b0082; /* Dark violet for the title */
+    text-align: center; /* Center the title */
+    font-size: 5.5rem; /* Font size for the title */
+    margin-bottom: 20px; /* Space below title */
+    font-family: 'Bodoni Moda', serif; /* Elegant font for title */
+}
+
+/* Container for the input and label */
+.mb-3 {
+    margin-bottom: 50px; /* Space below each input field */
+    display: flex;
+    flex-direction: column; /* Stack label above input */
+    align-items: center; /* Center align input and label */
+}
+  
+/* Style for the label */
+.formLabel {
+    font-size: 1.8rem; /* Slightly larger font size for readability */
+    color: #008dc0; /* Email label color */
+    margin-bottom: 50px; /* Space between label and input */
+    font-weight: bold; /* Make the label text bold */
+    text-align: center; /* Center the label text */
+}
+  
+/* Style for the input field */
+.formControl {
+    width: 60%; /* Adjust width to make it look centered */
+    padding: 10px; /* Padding inside the input field */
+    font-size: 1.1rem; /* Larger font for better readability */
+    border: 2px solid #008dc0; /* Add border with primary color */
+    border-radius: 5px; /* Rounded corners for input box */
+    outline: none; /* Remove default outline on focus */
+    background-color: #f9f9f9; /* Light background for input */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+}
+  
+/* Input hover/focus effects */
+.formControl:focus {
+    border-color: #a22be2; /* Change border color on focus */
+    box-shadow: 0 0 5px rgba(162, 43, 226, 0.5); /* Add subtle shadow on focus */
+}
+  
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+    .formControl {
+        width: 90%; /* Make the input fields wider on smaller screens */
+    }
+}
+  
+/* Container for buttons and text */
+.dFlex {
+    display: flex;
+    flex-direction: column; /* Stack buttons and text vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    gap: 15px; /* Add spacing between the elements */
+    margin-top: 20px; /* Space above the button section */
+}
+  
+/* Style for the primary button (Register) */
+.btnPrimary {
+    width: 100%; /* Full width button */
+    max-width: 300px; /* Max width to control size on larger screens */
+    padding: 10px 20px; /* Padding inside button */
+    font-size: 1.2rem; /* Increase font size */
+    font-weight: bold; /* Make text bold */
+    color: #fff; /* Text color */
+    border: none; /* Remove default border */
+    border-radius: 25px; /* Rounded corners */
+    background: linear-gradient(45deg, #008dc0, #a22be2); /* Gradient background */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: transform 0.2s, box-shadow 0.2s; /* Smooth transition on hover */
+}
+  
+/* Hover effect for the primary button */
+.btnPrimary:hover {
+    transform: translateY(-3px); /* Slightly lift the button on hover */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Intensify shadow on hover */
+}
+  
+/* Style for the secondary link button (Login) */
+.btnLink {
+    background: none; /* No background for link-style button */
+    color: #008dc0; /* Primary color for text */
+    font-size: 1.8rem; /* Slightly larger font */
+    border: none; /* Remove border */
+    text-decoration: underline; /* Underline for link effect */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: color 0.2s ease-in; /* Smooth color transition */
+}
+  
+/* Hover effect for the link button */
+.btnLink:hover {
+    color: #a22be2; /* Change text color on hover */
+}
+  
+/* Text styling for "Already have an account?" */
+.dFlex p {
+    font-size: 1.5rem; /* Font size for the paragraph */
+    color: #333; /* Darker color for contrast */
+    margin: 0; /* Remove default margin */
+    text-align: center; /* Center the text */
+}
+
+/* Password validation rules */
+.passwordRules {
+    background-color: #f8f9fa;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.passwordRules ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.passwordRules li {
+    margin: 5px 0;
+}
+
+/* Styling for disabled button */
+button:disabled {
+    background-color: gray;
+    cursor: not-allowed;
+}
+.loading {
+    font-size: 1.5em;
+    text-align: center;
+    margin-top: 20px;
+    color: #4a90e2; /* Customize color as needed */
+  }

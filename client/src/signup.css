@@ -1,0 +1,135 @@
+/* Main container for the signup form */
+.container {
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    align-items: center; /* Center contents vertically */
+    justify-content: center; /* Center contents horizontally */
+    background: linear-gradient(45deg, #008dc0aa, #a22be2); /* Background gradient */
+}
+
+/* Box for the form */
+.box {
+    width: 400px; /* Fixed width */
+    background-color: #fff; /* White background */
+    padding: 30px; /* Padding inside the box */
+    border-radius: 20px; /* Rounded corners */
+    box-shadow: 0px 9px 30px -15px rgba(0, 0, 0, 0.5); /* Shadow effect */
+    text-align: center; /* Center text */
+}
+
+/* Heading style */
+h2 {
+    font-size: 32px; /* Font size for heading */
+    font-weight: bold; /* Bold font */
+    margin-bottom: 30px; /* Space below heading */
+}
+
+/* Input box styling */
+.mb-3 {
+    margin-bottom: 25px; /* Space below each input */
+}
+
+/* Label styling */
+.form-label {
+    font-weight: bold; /* Bold font for labels */
+    display: block; /* Block display for full width */
+    margin-bottom: 8px; /* Space below label */
+}
+
+/* Input field styling */
+.form-control {
+    width: 100%; /* Full width */
+    padding: 10px; /* Padding for input */
+    border: 2px solid #ccc; /* Light border for input */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    outline: none; /* Remove outline */
+    transition: border-color 0.3s; /* Transition for border color */
+}
+
+/* Input focus effect */
+.form-control:focus {
+    border-color: #008dc0; /* Change border color on focus */
+}
+
+/* Error message styling */
+.alert {
+    margin-top: 10px; /* Space above error message */
+    color: red; /* Red text for error */
+}
+
+/* Button styling */
+.btn {
+    width: 100%; /* Full width button */
+    padding: 10px; /* Padding for button */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded button */
+    font-size: 18px; /* Font size */
+    cursor: pointer; /* Pointer cursor */
+}
+
+/* Primary button styling */
+.btn-primary {
+    background-color: #008dc0; /* Primary color */
+    color: white; /* White text */
+    transition: background-color 0.3s; /* Transition for hover */
+}
+
+/* Button hover effect */
+.btn-primary:hover {
+    background-color: #007ba0; /* Darker shade on hover */
+}
+
+/* Link button styling */
+.btn-link {
+    background: none; /* No background */
+    color: #a22be2; /* Link color */
+    font-weight: bold; /* Bold font */
+    margin-left: 10px; /* Space between text and button */
+}
+
+/* Button link hover effect */
+.btn-link:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Flexbox styling for the last section */
+.d-flex {
+    display: flex; /* Flexbox for alignment */
+    justify-content: space-between; /* Space between elements */
+    align-items: center; /* Center items vertically */
+}
+
+/* Navbar styles */
+nav {
+    width: 100%; 
+    height: 50px; /* Fixed height for navbar */
+    background: white; /* White background */
+    padding: 0 20px; /* Padding */
+    display: flex; /* Flexbox for alignment */
+    justify-content: space-between; /* Space between items */
+    align-items: center; /* Center items */
+}
+
+/* Logo styles */
+nav .logo {
+    font-weight: 500; /* Medium weight */
+    font-size: 18px; /* Font size */
+    color: #34495e; /* Dark color */
+}
+
+/* Menu styles */
+nav .menu a {
+    margin: 10px 10px; /* Space around menu items */
+    text-decoration: none; /* No underline */
+    font-size: 18px; /* Font size */
+    margin-right: 35px; /* Extra margin on the right */
+    color: #a22be2; /* Link color */
+}
+
+/* Menu item hover effect */
+nav .menu a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
